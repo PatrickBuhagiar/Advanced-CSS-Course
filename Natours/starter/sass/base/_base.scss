@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+
+  /*
+  Automatically inherit in all elements whatever we set
+  in body.
+   */
+  box-sizing: inherit;
+
+}
+
+html {
+  /*
+
+  This will act as a basis for all our REM calculations.
+
+  The root font size is usually 16px. So 10px is 62.5%,
+  and thus 1REM = 10px.
+
+  REM is not supported by IE < 9
+  */
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
