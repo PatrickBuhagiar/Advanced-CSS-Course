@@ -74,7 +74,7 @@
 // USER NAVIGATION
 .user-nav {
     align-self: stretch;
-    
+
     display: flex;
     align-items: center;
 
@@ -410,7 +410,7 @@
         background-size: cover;
 
         //Newer browsers - masks
-        @supports (-webkit-mask-image: url()) or (mask-image: url()) {
+        @supports (-webkit-mask-image: none) or (mask-image: none) {
             background-color: var(--color-primary);
             -webkit-mask-image: url(../img/chevron-thin-right.svg);
             -webkit-mask-size: cover;
@@ -418,7 +418,7 @@
             mask-size: cover;
             background-image: none;
         }
-        
+
     }
 }
 
